@@ -5,7 +5,7 @@ How To Install it:
 
 If you end up in a folder called “Templates”, you’re good to go. If you end up in a folder called “Xcode” it means you don’t have a Templates folder yet, so the first step is to create one: right-click in the window, choose New Folder, name it Templates, then navigate into it.
 
-2. Create a sub folder of Templates, and name it `File Templates`, for files templates (versus to `Project Templates`)
+2. If you don't already have a `File Templates` folder in Templates, the create a sub folder and name it `File Templates`, for files templates (versus to `Project Templates`)
 
 3. Copy `Design Patterns` folder to `~/Library/Developer/Xcode/Templates/File Templates` to try it out. 
 
