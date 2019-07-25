@@ -15,8 +15,13 @@ Regarding this last path component Source/ you'll find it in Xcode under the rel
 
 # For More Understanding:
 https://www.hackingwithswift.com/articles/158/how-to-create-a-custom-xcode-template-for-coordinators
+
 https://snipt.net/raw/b216c160f38e9b3c095222607739b21c/
+
 https://github.com/phranck/Xcode-Coordinator-Template
+
 https://www.lordcodes.com/posts/create-xcode-file-templates
+
 https://useyourloaf.com/blog/creating-custom-xcode-project-templates/
+
 https://thoughtbot.com/blog/creating-custom-xcode-templates
