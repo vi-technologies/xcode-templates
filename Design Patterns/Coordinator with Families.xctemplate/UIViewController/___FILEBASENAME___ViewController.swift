@@ -6,8 +6,16 @@
 //  ___COPYRIGHT___
 //
 
+import UIKit
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___ {
-        
+class ___VARIABLE_sceneName___ViewController: ViewController {
+
+    // MARK: - Outlets
+
+    
+
+    // MARK: - Properties
+
+    
 }
