@@ -10,16 +10,15 @@ import Foundation
 
 class ___VARIABLE_sceneName___Coordinator: Coordinator {
     
-    //MARK: - Properties
-    
-    private enum Destination: CoordinatorDestination {
-        case <#default#>Destination, <#second#>Destination, none
+    //MARK: properties
+    private enum destination: CoordinatorDestination {
+        case <#defaultDestination#>, <#secondDestination#>, ..., none
         
         var id: String {
             switch self {
-            case .<#default#>Destination:
+            case .<#defaultDestination#>:
             return <#Default#>ViewController.className
-            case .<#second#>Destination:
+            case .<#secondDestination#>:
                 return <#Second#>ViewController.className
             case .none:
                 return ""
@@ -27,29 +26,27 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
         }
     }
     
-    private var initialDestination: Destination {
-        return .<#default#>Destination
+    private var initialDestination: destination {
+        return .<#defaultDestination#>
     }
     
-    //MARK: - Lifecycle
-    
+    //MARK: lifecycle
     override func start(with completion: @escaping () -> Void) {
         navigate(to: initialDestination)
         super.start()
     }
     
-    //MARK: - Navigation
-    
-    private func navigate(to destination: Destination) {
+    //MARK: navigation
+    private func navigate(to destination: destination) {
                 
         switch destination {
-        case .<#default#>Destination:
+        case .<#defaultDestination#>:
             if let viewController = <#Default#>ViewController() {
                 viewController.viewModel = <#Default#>ViewModel(coordinator: self, viewController: viewController)
                 navigate(to: destination, controller: viewController, embedInNavigation: true, animated: true)
             }
             
-        case .<#second#>Destination:
+        case .<#secondDestination#>:
             if let viewController = <#Second#>ViewController() {
                 viewController.viewModel = <#Second#>ViewModel(coordinator: self, viewController: viewController)
                 navigate(to: destination, controller: viewController, embedInNavigation: true, animated: true)
@@ -60,17 +57,16 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
         }
     }
     
-    private func nextDestination() -> Destination {
-        guard let currentDestination = currentDestination as? Destination else {
-            return .<#default#>Destination
+    private func nextDestination() -> destination {
+        guard let currentDestination = currentDestination as? destination else {
+            return .<#defaultDestination#>
         }
         
         switch currentDestination {
-        case .<#default#>Destination:
+        case .<#defaultDestination#>n:
             return .<#second#>Destination
             
-        case .<#second#>Destination:
-            //TODO:
+        case .<#secondDestination#>:
             return . none
             
         case .none:
@@ -81,24 +77,7 @@ class ___VARIABLE_sceneName___Coordinator: Coordinator {
     
     //MARK: - Handle events
     
-    func authenticationRequired() {
-        //TODO:
-        //check if onboarding is needed and continue
-        
-        navigate(to: nextDestination())
-    }
-    
-    //TODO: add authentication type
-    func authenticationCompleted() {
-        //TODO:
-        //check if onboarding is needed and continue
-        
-        //
-        navigate(to: nextDestination())
-    }
-    
     //MARK: -
-    
     
     
 }

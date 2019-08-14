@@ -48,6 +48,20 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___Model</string>
+			<key>Description</key>
+			<string>The model name</string>
+			<key>Identifier</key>
+			<string>ModelName</string>
+			<key>Name</key>
+			<string>Model Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___ViewModel</string>
 			<key>Description</key>
 			<string>The viewModel name</string>
@@ -76,46 +90,17 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___ViewController.storyboard</string>
 			<key>Description</key>
-			<string>The Xib / Storyboard name</string>
+			<string>The Storyboard name</string>
 			<key>Identifier</key>
 			<string>XibName</string>
 			<key>Name</key>
-			<string>Xib / Storyboard Name:</string>
+			<string>Storyboard Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
 			<string>static</string>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>XibName</string>
-			<key>Name</key>
-			<string>Storyboard</string>
-			<key>NotPersisted</key>
-			<false/>
-			<key>SortOrder</key>
-			<integer>101</integer>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>true</string>
-			<key>Units</key>
-			<dict>
-				<key>true</key>
-				<dict>
-					<key>Components</key>
-					<array>
-						<dict>
-							<key>Identifier</key>
-							<string>com.apple.dt.unit.cocoaTouchApplicationUITestBundle</string>
-							<key>Name</key>
-							<string>___PACKAGENAME___UITests</string>
-						</dict>
-					</array>
-				</dict>
-			</dict>
 		</dict>
 	</array>
 	<key>SortOrder</key>
